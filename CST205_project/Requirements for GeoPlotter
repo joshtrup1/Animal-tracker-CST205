@@ -1,0 +1,17 @@
+
+pip install RTRee
+sudo apt install gdal-bin python-gdal python3-gdal
+pip install Fiona
+pip install shapely
+pip install git+git://github.com/geopandas/geopandas.git
+pip install pandas
+pip install Numpy
+pip install SciPy
+pip install PySAL
+pip install Matplotlib
+pip install Missingno
+sudo apt-get install libspatialindex-dev
+sudo apt-get install python3-tk
+
+
+
