@@ -48,16 +48,17 @@ class Window(QWidget):
         animal.plot(figsize=(20,10));
 
 
-        fig, ax = plt.subplots(1, figsize=(20,20))
+         fig, ax = plt.subplots(1, figsize=(20,20))
         base = world.plot(figsize=(30,20))
-        animal.plot(ax=base, column='month', marker="<", markersize=10, cmap='rainbow', label="Transmisson Time")
+        animal.plot(ax=base, column='month', categorical=True, legend=True, marker=".", markersize=10, cmap='rainbow', label="Month")
         _ = ax.axis('off')
-        ax.legend(loc='lower left')
-        plt.legend()
+
+        ax.legend(title="MONTH")
+
+
+        
         ax.set_title("PSTAT-tagged Animal", fontsize=25)
         plt.savefig(str(filename).replace(".csv", ".png"), bbox_inches='tight');
-      
-      
       
   
   
