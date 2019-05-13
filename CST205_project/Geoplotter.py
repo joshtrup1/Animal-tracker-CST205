@@ -89,8 +89,8 @@ class Window(QWidget):
         _ = ax.axis('off')
 
         ax.legend(title="MONTH")
-
-
+  
+        plt.show()
         
         ax.set_title("PSTAT-tagged Animal", fontsize=25)
         plt.savefig(str(filename).replace(".csv", ".png"), bbox_inches='tight');
